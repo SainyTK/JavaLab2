@@ -1,44 +1,50 @@
 public class Point{
-  private float x,y,z;
   
-  public Point(float x,float y,float z)
+  private double x,y,z;
+  
+  public Point()
+  {
+
+  }
+
+  public Point(double x,double y,double z)
   {
     this.x = x;
     this.y = y;
     this.z = z;
   }
   
-  public float getX()
+  public double getX()
   {
     return this.x;
   }
   
-   public float getY()
+   public double getY()
   {
     return this.y;
   }
    
-   public float getZ()
+   public double getZ()
   {
     return this.z;
   }
    
-  public void setX(float x)
+  public void setX(double x)
   {
     this.x = x;
   }
   
-  public void setY(float y)
+  public void setY(double y)
   {
     this.y = y;
   }
   
-  public void setZ(float z)
+  public void setZ(double z)
   {
     this.z = z;
   }
   
-  public void setXYZ(float x,float y,float z)
+  public void setXYZ(double x,double y,double z)
   {
     this.x = x;
     this.y = y;
@@ -50,5 +56,10 @@ public class Point{
     this.x = p.getX();
     this.y = p.getY();
     this.z = p.getZ();
+  }
+
+  public void showPoint(String pointName)
+  {
+    System.out.printf(pointName + " :: x : %.1f, y : %.1f, z : %.1f\n",this.x,this.y,this.z);
   }
 }
