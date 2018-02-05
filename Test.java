@@ -14,5 +14,14 @@ public class Test
     p2.showPoint("p2");
     p3.showPoint("p3");
 
+    p3.setX(0);
+    p3.setY(0);
+    p3.setZ(0);
+
+    p2.setPoint(p3);
+
+    p1.showPoint("p1");
+    p2.showPoint("p2");
+    p3.showPoint("p3");
   }
 }
